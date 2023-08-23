@@ -90,7 +90,7 @@ int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* Functions for handling all other specifiers */
-int get_flags(const char *format, int *i);
+int in_get_flags(const char *format, int *i);
 
 int to_get_width(const char *format, int *i, va_list list);
 
@@ -107,7 +107,7 @@ int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* The width handler */
-int handle_write_char(char c, char buffer[],
+int to_handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size);
 
 int write_number(int is_positive, int ind, char buffer[],

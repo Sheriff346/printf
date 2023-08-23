@@ -73,7 +73,7 @@ int print_char(va_list types, char buffer[],
 {
 	char m = va_arg(types, int);
 
-	return (handle_write_char(m, buffer, flags, width, precision, size));
+	return (to_handle_write_char(m, buffer, flags, width, precision, size));
 }
 
 /**PRINTING BINARY**/
