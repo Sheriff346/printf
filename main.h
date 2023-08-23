@@ -94,7 +94,7 @@ int get_flags(const char *format, int *i);
 
 int to_get_width(const char *format, int *i, va_list list);
 
-int get_precision(const char *format, int *i, va_list list);
+int we_get_precision(const char *format, int *i, va_list list);
 
 int for_get_size(const char *format, int *i);
 
